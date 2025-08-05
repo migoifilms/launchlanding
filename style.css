@@ -138,3 +138,45 @@ footer {
 footer a {
     color: #fff;
 }
+
+/* Media Queries for Mobile Friendliness */
+@media (max-width: 768px) {
+    nav a {
+        margin: 0 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .fullscreen {
+        background-attachment: scroll; /* parallax effect is not great on mobile */
+    }
+
+    .content {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    #home .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .project-links a {
+        font-size: 1.2rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    #about p {
+        font-size: 1rem;
+    }
+}
