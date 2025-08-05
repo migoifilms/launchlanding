@@ -26,20 +26,26 @@ nav a {
     margin: 0 1rem;
     font-weight: bold;
     transition: color 0.3s ease;
+    padding-bottom: 5px; /* Add some space for the border */
+    border-bottom: 2px solid transparent; /* Prepare for active state */
 }
 
 nav a:hover {
     color: #ddd;
 }
 
+nav a.active {
+    border-bottom: 2px solid #fff;
+}
+
 .fullscreen {
-    height: 100vh;
+    min-height: 100vh; /* Use min-height to be more flexible */
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 1rem;
+    padding: 2rem;
     box-sizing: border-box;
     background-size: cover;
     background-position: center;
@@ -50,6 +56,7 @@ nav a:hover {
     background: rgba(0, 0, 0, 0.6);
     padding: 2rem 3rem;
     border-radius: 10px;
+    max-width: 90%;
 }
 
 /* Background Images for Each Section */
@@ -119,6 +126,7 @@ h2 {
 #about p {
     font-size: 1.2rem;
     max-width: 800px;
+    margin: 0 auto;
 }
 
 .sitemap {
@@ -148,6 +156,7 @@ footer a {
 
     .fullscreen {
         background-attachment: scroll; /* parallax effect is not great on mobile */
+        padding: 1rem;
     }
 
     .content {
