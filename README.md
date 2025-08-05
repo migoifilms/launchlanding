@@ -1,21 +1,28 @@
-# Migoi Films - Nature and Wildlife Photography
+# Migoi Films - Modern Single-Page Website
 
-This is a launch landing page for Migoi Films, a nature and wildlife inspired photography and conservation effort.
+This is a modern, minimal, single-page scrolling website for Migoi Films, a nature and wildlife inspired photography and conservation effort.
 
-## About Migoi Films
+## About The Design
 
-Migoi Films is dedicated to capturing the beauty of nature and wildlife, with a current focus on India. Our work highlights the incredible biodiversity of regions like the Himalayas, the Northeast, and the Konkan Coast. Through our photography, we aim to inspire conservation and a deeper appreciation for the natural world.
+This website is a single-page design with a fixed navigation bar and five full-screen sections:
+1.  **Home:** Displays the logo and brand name.
+2.  **Projects:** Links to key project areas.
+3.  **Inquire:** A Call-to-Action (CTA) for collaboration.
+4.  **About:** A brief about Migoi Films.
+5.  **Contact:** Sitemap and contact information.
+
+The site is designed to be visually driven, with each section featuring a full-screen background image.
 
 ## How to Use
 
-This is a simple, static landing page built with HTML, CSS, and a little bit of JavaScript. It is designed to be hosted on GitHub Pages.
+This is a static website built with HTML, CSS, and JavaScript, designed for GitHub Pages.
 
 ### Customization
 
-1.  **Content:** Edit `index.html` to change the text content.
-2.  **Styling:** Modify `style.css` to change the look and feel of the website. You can change colors, fonts, and layout.
-3.  **Images:** Replace the placeholder images in the `index.html` with your own photography. The current placeholders are from [lorempicsum.com](https://picsum.photos/). You will want to create an `images` directory and add your photos there, then update the `src` attributes in the `<img>` tags.
-4.  **Scripts:** `script.js` contains minimal JavaScript. You can add more interactivity here if you wish.
+1.  **Content:** Edit `index.html` to change text content in any section.
+2.  **Styling:** You can modify `style.css` for minor tweaks, but the core structure is built around the full-screen sections.
+3.  **Background Images:** This is the most important part to customize. In `style.css`, find the section with the comment `/* Background Images for Each Section */`. You will see CSS rules for `#home`, `#projects`, `#cta`, `#about`, and `#contact`. Replace the `url(...)` placeholders with links to your own images. It's recommended to create an `images` folder in this directory, add your photos, and then link to them like `url('images/your-photo.jpg')`.
+4.  **Scripts:** The `script.js` file handles smooth scrolling and navigation highlighting. No changes are needed unless you want to add more advanced functionality.
 
 ### Deploying to GitHub Pages
 

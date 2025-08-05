@@ -1,101 +1,140 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Georgia', serif;
+    font-family: 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fdfdfd;
-    color: #333;
-    line-height: 1.6;
-}
-
-header {
-    background: #2c3e50;
     color: #fff;
-    padding: 2rem 1rem;
-    text-align: center;
+    overflow-x: hidden;
 }
 
-.header-content .logo {
-    width: 100px;
-    height: 100px;
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ddd;
+}
+
+.fullscreen {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem 3rem;
+    border-radius: 10px;
+}
+
+/* Background Images for Each Section */
+/* Replace these URLs with your own images */
+#home {
+    background-image: url('https://picsum.photos/1920/1080?image=1043');
+}
+#projects {
+    background-image: url('https://picsum.photos/1920/1080?image=1044');
+}
+#cta {
+    background-image: url('https://picsum.photos/1920/1080?image=1045');
+}
+#about {
+    background-image: url('https://picsum.photos/1920/1080?image=1048');
+}
+#contact {
+    background-image: url('https://picsum.photos/1920/1080?image=1050');
+}
+
+
+#home .logo {
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin-bottom: 1rem;
 }
 
-header h1 {
+h1 {
+    font-size: 3rem;
     margin: 0;
-    font-size: 2.5rem;
-}
-
-header p {
-    font-size: 1.2rem;
-}
-
-main {
-    padding: 2rem 1rem;
-    text-align: center;
-}
-
-section {
-    margin-bottom: 3rem;
 }
 
 h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #ccc;
-    display: inline-block;
-    padding-bottom: .5rem;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
-.region-gallery {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.region {
-    margin: 1rem;
-    max-width: 400px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.region:hover {
-    transform: scale(1.05);
-}
-
-.region img {
-    width: 100%;
-    height: auto;
-}
-
-.region h3 {
-    padding: 1rem;
-    margin: 0;
-    background: #333;
+.project-links a {
+    display: block;
+    margin: 1rem 0;
     color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
 }
 
-.region p {
-    padding: 1rem;
+.project-links a:hover {
+    color: #ddd;
 }
 
-#contact a {
-    color: #2c3e50;
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #fff;
+    color: #000;
     text-decoration: none;
     font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
-#contact a:hover {
-    text-decoration: underline;
+.cta-button:hover {
+    background: #eee;
+}
+
+#about p {
+    font-size: 1.2rem;
+    max-width: 800px;
+}
+
+.sitemap {
+    margin-bottom: 2rem;
+}
+
+.sitemap a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
 }
 
 footer {
-    background: #2c3e50;
+    font-size: 0.9rem;
+}
+
+footer a {
     color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
